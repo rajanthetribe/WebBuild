@@ -21,9 +21,7 @@
         </div>
       </div>
       <div id="unity-footer">
-  
-        <button id="enterar" value="Enter AR" disabled>AR</button>
-        <div id="unity-build-title">TheTribeTeam</div>
+        <div id="unity-webxr-link">By <a href="https://allinreality.com" target="_blank" title="AllinReality">AllinReality</a></div>
       </div>
     </div>
     <script>
@@ -70,16 +68,7 @@
       };
       document.body.appendChild(script);
 
-      let enterARButton = document.getElementById('enterar');
 
-      document.addEventListener('onARSupportedCheck', function (event) {
-        enterARButton.disabled = !event.detail.supported;
-      }, false);
-
-      enterARButton.addEventListener('click', function (event) {
-        unityInstance.Module.WebXR.toggleAR();
-      }, false);
-   
     </script>
   </body>
 </html>
